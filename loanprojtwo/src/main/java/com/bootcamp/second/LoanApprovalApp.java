@@ -12,7 +12,7 @@ public class LoanApprovalApp {
 
 	@GetMapping("/loancheck/{expyears}")
 	public ResponseEntity<LoanResponse> loanEligibilityCheck(@PathVariable("expyears")int expyears){
-		System.out.println(" in loaneligibility check "+expyears+new Date());
+		System.out.println(" in loaneligibility chec....k "+expyears+new Date());
 		int amt=0;
 		int status=0;
 		if(expyears > 4)
